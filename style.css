@@ -1,0 +1,54 @@
+.navbar-nav > li > a {
+  color: black;
+  border-radius: 10px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-nav > li > a:hover {
+  background-color: rgba(231, 231, 231, 0.3);
+  border-radius: 10px;
+  color: black;
+}
+.navbar-nav > li {
+  color: #414141;
+  font-size: calc(0.43em + 0.43vw);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buttonH {
+  margin: 0px;
+  font-size: calc(0.4em + 0.4vw);
+  background-color: #d8d8d838;
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: 600;
+  
+}
+
+.buttonH :hover {
+  background-color: #ffffff;
+  color: #292929;
+}
