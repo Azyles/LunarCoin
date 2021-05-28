@@ -1,3 +1,8 @@
+
+
+#header{
+  transition: 1.2s;
+}
 .navbar-nav > li > a {
   color: black;
   border-radius: 10px;
