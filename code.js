@@ -7,7 +7,7 @@ function scrollFunction() {
     document.getElementById("header").style.width = "90%";
     document.getElementById("header").style.marginLeft = "5%";
     document.getElementById("header").style.marginRight = "1%";
-    document.getElementById("header").style.borderRadius = "1%";
+    document.getElementById("header").style.borderRadius = "0%";
   } else {
     document.getElementById("header").style.height = "100%";
     document.getElementById("header").style.width = "100%";

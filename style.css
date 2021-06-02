@@ -1,4 +1,17 @@
+@font-face {
+  font-family: AvertaCY;
+  src:  url('fonts/AvertaCY-Regular.woff2') format('woff2');
+}
 
+@font-face {
+  font-family: AvertaCYL;
+  src:  url('fonts/AvertaCY-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: AvertaCYB;
+  src:  url('fonts/AvertaCY-Semibold.woff2') format('woff2');
+}
 
 #header{
   transition: 1.2s;
