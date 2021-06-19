@@ -1,19 +1,18 @@
 @font-face {
   font-family: AvertaCY;
-  src:  url('fonts/AvertaCY-Regular.woff2') format('woff2');
+  src: url("fonts/AvertaCY-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: AvertaCYL;
-  src:  url('fonts/AvertaCY-Light.woff2') format('woff2');
+  src: url("fonts/AvertaCY-Light.woff2") format("woff2");
 }
 
 @font-face {
   font-family: AvertaCYB;
-  src:  url('fonts/AvertaCY-Semibold.woff2') format('woff2');
+  src: url("fonts/AvertaCY-Semibold.woff2") format("woff2");
 }
 
- 
 ::-webkit-scrollbar {
   background: transparent;
   width: 17px;
@@ -37,7 +36,7 @@
   color: white;
 }
 
-#header{
+#header {
   transition: 1.2s;
 }
 .navbar-nav > li > a {
@@ -60,7 +59,7 @@
   padding-right: 10px;
 }
 
-.container-fluid {
+.thingy {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -87,7 +86,6 @@
   color: #ffffff;
   border-radius: 10px;
   font-weight: 600;
-  
 }
 
 .buttonH :hover {
@@ -102,7 +100,6 @@
   color: #ffffff;
   border-radius: 10px;
   font-weight: 600;
-  
 }
 
 .buttonx :hover {
@@ -110,8 +107,7 @@
   color: #292929;
 }
 
-
-.glow { 
+.glow {
   z-index: -1;
   position: fixed;
   top: calc(0%);
@@ -124,5 +120,48 @@
   background-position: center;
 }
 
+.holster {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  font-family: monospace;
+}
 
+.thingy {
+  display: flex;
+  overflow: auto;
+  flex: none;
+}
 
+.thingy.y {
+  height: 100%;
+  width: 100%;
+  flex-flow: column nowrap;
+}
+
+.y.mandatory-scroll-snapping {
+  scroll-snap-type: y mandatory;
+}
+
+.thingy > div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+}
+
+.y.thingy > div {
+  width: 100%;
+  height: 100%;
+}
+/* appearance fixes */
+.y.thingy > div:first-child {
+}
+/* coloration */
+.thingy > div:nth-child(even) {
+  background-color: #87ea87;
+}
+
+.thingy > div:nth-child(odd) {
+  background-color: #87ccea;
+}
