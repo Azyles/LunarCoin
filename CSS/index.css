@@ -419,7 +419,7 @@ body{
   }
 
   .main-heading-gradient{
-      background: -webkit-linear-gradient(#0CCDA3, red);
+      background: -webkit-linear-gradient(#0CCDA3, #00F0FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
