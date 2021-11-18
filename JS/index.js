@@ -27,15 +27,52 @@ var x = setInterval(function() {
   var days = Math.floor(distance/day);
 
   console.log(months)
+  
+  // Months
+  var elms = document.querySelectorAll("[id='months_1']");
 
-  document.getElementById("months_1").innerHTML = getDigit(months, 2);
-  document.getElementById("months_2").innerHTML = getDigit(months, 1);
+  for(var i = 0; i < elms.length; i++) 
+    elms[i].innerHTML = getDigit(months, 2);
 
-  document.getElementById("days_1").innerHTML = getDigit(days, 2);
-  document.getElementById("days_2").innerHTML = getDigit(days, 1);
+  
+  var elms = document.querySelectorAll("[id='months_2']");
 
-  document.getElementById("hours_1").innerHTML = getDigit(hours, 2);
-  document.getElementById("hours_2").innerHTML = getDigit(hours, 1);
+  for(var i = 0; i < elms.length; i++) 
+    elms[i].innerHTML = getDigit(months, 1); 
+  
+  
+  // Days
+  var elms = document.querySelectorAll("[id='days_1']");
+
+  for(var i = 0; i < elms.length; i++) 
+    elms[i].innerHTML = getDigit(days, 2);
+
+  
+  var elms = document.querySelectorAll("[id='days_2']");
+
+  for(var i = 0; i < elms.length; i++) 
+    elms[i].innerHTML = getDigit(days, 1);
+
+  // Hours
+  var elms = document.querySelectorAll("[id='hours_1']");
+
+  for(var i = 0; i < elms.length; i++) 
+    elms[i].innerHTML = getDigit(hours, 2);
+
+  
+  var elms = document.querySelectorAll("[id='hours_2']");
+
+  for(var i = 0; i < elms.length; i++) 
+    elms[i].innerHTML = getDigit(hours, 1);
+
+  //document.getElementById("months_1").innerHTML = getDigit(months, 2);
+  //document.getElementById("months_2").innerHTML = getDigit(months, 1);
+
+  //document.getElementById("days_1").innerHTML = getDigit(days, 2);
+  //document.getElementById("days_2").innerHTML = getDigit(days, 1);
+
+  //document.getElementById("hours_1").innerHTML = getDigit(hours, 2);
+  //document.getElementById("hours_2").innerHTML = getDigit(hours, 1);
 
   
   document.getElementById("mins_1").innerHTML = getDigit(minutes, 2);
